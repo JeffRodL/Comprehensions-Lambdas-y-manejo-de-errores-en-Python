@@ -1,0 +1,26 @@
+def run():
+    my_list = [1, "helllo", True, 4.5]
+    my_dict = {"firstname": "Jefferson", "lastname": "Rodriguez"}
+
+    super_list = [
+        {"firstname": "Jefferson", "lastname": "Rodriguez"},
+        {"firstname": "Miguel", "lastname": "Torres"},
+        {"firstname": "Pepe", "lastname": "Rodelo"},
+        {"firstname": "Chanchito", "lastname": "Feliz"}
+    ]
+
+    super_dict = {
+        "natural_nums": {1,2,3,4,5},
+        "integer_nums": {-1,-2,0,1,2},
+        "float_nums": {1.1, 4.5, 6.43}
+    }
+
+    for key, value in super_dict.items():
+        print(key, '-',value)
+
+    for i in range(len(super_list)):
+        print(super_list[i])
+        
+
+if __name__ == '__main__':
+    run()
